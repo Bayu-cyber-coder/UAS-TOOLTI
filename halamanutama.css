@@ -1,0 +1,238 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0A525A;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+}
+
+footer {
+    background-color: #0A525A; 
+    color: white;
+    padding: 10px 20px; 
+    position: relative; 
+    width: 96.8%;
+}
+
+/* Flex container untuk halaman utama */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    flex: 1;
+    background-image: url("bg-ti.png");
+    background-size: cover;
+    background-position: center; 
+    min-height: 100vh; 
+}
+
+.logo-ti-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    max-width: 700px;
+    margin-top: 1cm;
+}
+
+.text-ti {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 1.5cm;
+}
+
+/* Grid container untuk menu */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    width: 70%;
+    margin-right: 2cm;
+    margin-bottom: 1cm;
+}
+
+/* Gaya untuk elemen dalam grid */
+.a-content, .b-content, .c-content, .d-content, .e-content, .f-content {
+    background-color: #0A525A;
+    width: 150px;
+    height: 150px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 10px 0;
+}
+
+.a-content:hover, .b-content:hover, .c-content:hover, .d-content:hover, .e-content:hover, .f-content:hover {
+    transform: scale(1.1);
+}
+
+/* Ukuran gambar dalam konten */
+.png-content-logoti {
+    width: 55%;
+    height: 55%;
+}
+
+.png-content-profilti {
+    width: 70%;
+    height: 70%;
+}
+
+.png-content-kemahasiswaan, .png-content-infoti, .png-content-jurnal, .png-content-download, .png-content-contact {
+    width: 50%;
+    height: 50%;
+}
+
+.a-content span {
+    margin-bottom: 15px;  
+    text-align: center;
+}
+
+.grid-container-footer {
+    margin-top: 1.5cm;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    margin-right: 0cm;
+    margin-bottom: 1cm;
+}
+
+.informasi, .hubungi-kami {
+    background-color: #2e99a5;
+    width: 200px;
+    height: 400px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 10px 0;
+    margin-bottom: 4.4cm;
+}
+
+.twitter-feed {
+    background-color: #2e99a5;
+    width: 350px;
+    height: 550px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 10px 0;
+}
+
+.facebook-feed {
+    background-color: #2e99a5;
+    width: 340px;
+    height: 400px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 10px 0;
+    margin-bottom: 4.4cm;
+}
+
+.informasi p, .twitter-feed p, .facebook-feed p, .hubungi-kami p {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: 97%; 
+    height: 3px; 
+    background-color: #2e99a5; 
+    position: absolute;
+    top: 0; 
+    left: 20;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 2cm;
+}
+
+ul {
+    text-align: left; 
+    list-style-type: none; 
+    padding-left: 0; 
+    font-size: 14px;
+}
+
+ul li {
+    padding-left: 1rem; 
+    padding-bottom: 0.1mm;
+    margin-left: 0cm;
+    margin-bottom: 1mm;
+}
+
+.informasi a{
+    text-decoration: none;
+    color: white;
+}
+
+.informasi a:hover {
+    color: #0b3237;
+    text-decoration: underline;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
